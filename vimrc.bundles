@@ -33,6 +33,14 @@ Plugin 'ervandew/supertab'
 Plugin 'majutsushi/tagbar'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'terryma/vim-multiple-cursors'
+Plugin 'rstacruz/sparkup'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'scrooloose/syntastic'
+Plugin 'roman/golden-ratio'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'rizzatti/dash.vim'
+Plugin 'SirVer/ultisnips'
+
 
 
 " All of your Plugins must be added before the following line

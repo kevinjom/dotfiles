@@ -34,7 +34,7 @@ set listchars=tab:\ \             " a tab should display as "  ", trailing white
 set listchars+=trail:.            " show trailing spaces as dots
 
 " autocmd
-autocmd VimEnter * execute 'NERDTree' | wincmd p
+" autocmd VimEnter * execute 'NERDTree' | wincmd p
 
 " maps
 nmap <leader>o :Tagbar<CR>           " toggle Tagbar
