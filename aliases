@@ -1,0 +1,8 @@
+alias ll='ls -alh'
+alias tailf='tailf -f'
+
+alias be='bundle exec'
+alias mvni='mvn clean install -Dmaven.test.skip -DskipTests -DdownloadSources'
+
+#the fuck
+alias fuck='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
