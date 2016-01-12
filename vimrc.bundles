@@ -28,6 +28,11 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-surround'
 Plugin 'rking/ag.vim'
 Plugin 'edsono/vim-matchit'
+Plugin 'bronson/vim-trailing-whitespace'
+Plugin 'ervandew/supertab'
+Plugin 'majutsushi/tagbar'
+Plugin 'easymotion/vim-easymotion'
+Plugin 'terryma/vim-multiple-cursors'
 
 
 " All of your Plugins must be added before the following line
@@ -46,5 +51,5 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 " ############################################################
-"   Vundle config END 
+"   Vundle config END
 " ############################################################
