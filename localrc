@@ -1,0 +1,13 @@
+if [ -z $MY_GIT_REPO ];then
+  export MY_GIT_REPO=~/github/kevinjom/
+fi
+
+rm_docker_containers(){
+  docker ps -aq | xargs docker rm -f
+}
+
+start_docker(){
+  docker_tool_dir="/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts"
+  bash "$docker_tool_dir/start.sh"
+}
+
