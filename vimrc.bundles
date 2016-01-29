@@ -23,6 +23,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'mattn/gist-vim'
 Plugin 'mattn/webapi-vim'
 Plugin 'bling/vim-airline'
+" Plugin 'powerline/powerline'
 Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-surround'
@@ -40,6 +41,8 @@ Plugin 'roman/golden-ratio'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'rizzatti/dash.vim'
 Plugin 'SirVer/ultisnips'
+Plugin 'chrisbra/csv.vim'
+" Plugin 'edkolev/tmuxline.vim'
 
 
 

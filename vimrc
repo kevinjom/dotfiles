@@ -41,8 +41,14 @@ nmap <leader>o :Tagbar<CR>           " toggle Tagbar
 nmap <leader>n :NERDTree<CR>         " toggle NERDTree
 nmap <leader>cn :NERDTreeClose<CR>   " close NERDTree
 
+nmap <leader>r :source ~/.vimrc<CR>      " relaod vim config
+
 " disable arrow keys
 nnoremap <Left> <NOP>
 nnoremap <Right> <NOP>
 nnoremap <Up> <NOP>
 nnoremap <Down> <NOP>
+
+" option settings for plugins
+let NERDTreeShowHidden=1
+let g:ctrlp_show_hidden = 1
