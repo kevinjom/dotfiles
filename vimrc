@@ -52,3 +52,12 @@ nnoremap <Down> <NOP>
 " option settings for plugins
 let NERDTreeShowHidden=1
 let g:ctrlp_show_hidden = 1
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0

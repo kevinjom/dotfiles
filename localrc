@@ -10,3 +10,5 @@ start_docker(){
   docker_tool_dir="/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts"
   bash "$docker_tool_dir/start.sh"
 }
+
+export TERM=screen-256color
