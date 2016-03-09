@@ -11,4 +11,8 @@ start_docker(){
   bash "$docker_tool_dir/start.sh"
 }
 
+rm_empty_files(){
+  rm -i *(.L0)
+}
+
 export TERM=screen-256color

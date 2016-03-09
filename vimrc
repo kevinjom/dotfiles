@@ -14,7 +14,7 @@ set backspace=2
 set textwidth=80
 " set colorcolumn=+2
 
-set hlsearch  " highlight search
+" set hlsearch  " highlight search
 set ic        " case insenstive search
 set incsearch
 

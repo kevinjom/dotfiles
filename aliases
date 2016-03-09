@@ -5,6 +5,16 @@ alias be='bundle exec'
 alias mvni='mvn clean install -Dmaven.test.skip -DskipTests -DdownloadSources'
 alias dc='docker-compose'
 alias cl='clear'
+alias his='history'
+
+alias -s txt=vim
+alias -g ...='../..'
+alias -g ....='../..'
+alias -g .....='../..'
+alias -g X='| xargs'
+alias -g G='| grep'
+alias -g U='| uniq'
+alias -g L='| less'
 
 #the fuck
 alias fuck='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
