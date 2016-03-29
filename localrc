@@ -16,3 +16,4 @@ rm_empty_files(){
 }
 
 export TERM=screen-256color
+export GRADLE_OPTS="$GRADLE_OPTS -Dorg.gradle.daemon=true"

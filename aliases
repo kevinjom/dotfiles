@@ -8,6 +8,7 @@ alias cl='clear'
 alias his='history'
 
 alias -s txt=vim
+alias -s csv=vim
 alias -g ...='../..'
 alias -g ....='../..'
 alias -g .....='../..'

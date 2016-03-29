@@ -36,12 +36,18 @@ set listchars+=trail:.            " show trailing spaces as dots
 " autocmd
 " autocmd VimEnter * execute 'NERDTree' | wincmd p
 
-" maps
+" ---------------------------------
+"  maps
+" ---------------------------------
 nmap <leader>o :Tagbar<CR>           " toggle Tagbar
-nmap <leader>n :NERDTree<CR>         " toggle NERDTree
-nmap <leader>cn :NERDTreeClose<CR>   " close NERDTree
 
-nmap <leader>r :source ~/.vimrc<CR>      " relaod vim config
+" NERDTree
+nmap <leader>n :NERDTree<CR>         " toggle NERDTree
+nmap <leader>nc :NERDTreeClose<CR>   " close NERDTree
+nmap <leader>nf :NERDTreeFind<CR>         " toggle NERDTree
+
+" reload vim config
+nmap <leader>r :source ~/.vimrc<CR>      " reload vim config
 
 " disable arrow keys
 nnoremap <Left> <NOP>
@@ -49,7 +55,10 @@ nnoremap <Right> <NOP>
 nnoremap <Up> <NOP>
 nnoremap <Down> <NOP>
 
+" ---------------------------------
 " option settings for plugins
+" ---------------------------------
+
 let NERDTreeShowHidden=1
 let g:ctrlp_show_hidden = 1
 
@@ -61,3 +70,7 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+
+" ultisnips
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsEditSplit="vertical"
