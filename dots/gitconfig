@@ -1,6 +1,6 @@
 [user]
-	name = <your name>
-	email = <your email>
+	name = Kevin Fan
+	email = wenqiang.fan@rea-group.com
 [branch]
 	autosetupmerge = true
 	autosetuprebase = always

@@ -19,3 +19,8 @@ alias -g L='| less'
 
 #the fuck
 alias fuck='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
+
+# simple way to switch jdk
+alias setJdk6='export JAVA_HOME=$(/usr/libexec/java_home -v 1.6)'
+alias setJdk7='export JAVA_HOME=$(/usr/libexec/java_home -v 1.7)'
+alias setJdk8='export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)'
