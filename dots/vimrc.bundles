@@ -50,6 +50,7 @@ Plugin 'benmills/vimux'
 Plugin 'jceb/vim-orgmode'
 " Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'Yggdroot/indentLine'
+Plugin 'vim-scripts/SyntaxRange'
 " Plugin 'edkolev/tmuxline.vim'
 
 
