@@ -2,7 +2,7 @@
 
 set -e
 
-WD=$(dirname $0)
+WD=$(cd $(dirname $0) && pwd -P)
 DOT_FILE_DIR=$(dirname $WD)
 
 cd "$DOT_FILE_DIR/dots"
