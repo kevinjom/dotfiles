@@ -1,0 +1,26 @@
+#!/bin/bash
+
+set -e
+
+WD=$(dirname $0)
+FORMULA_FILE=$(dirname $WD)/brew/formuals
+
+update_formula_list(){
+  brew list > $FORMULA_FILE
+}
+
+[[ -z "$1" ]] && echo "oh man, what you are commiting" && exit 1
+commit_msg=$1
+
+git stash
+git pr
+git stash pop || echo "nothing in stash ref"
+
+update_formula_list
+
+git add .
+git commit -m "$commit_msg"
+git push
+
+echo "push it real good"
+
