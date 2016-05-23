@@ -6,6 +6,8 @@ rm_docker_containers(){
   docker ps -aq | xargs docker rm -f
 }
 
+##  docker
+
 start_docker(){
   docker_tool_dir="/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts"
   bash "$docker_tool_dir/start.sh"
@@ -13,6 +15,11 @@ start_docker(){
 
 rm_empty_files(){
   rm -i *(.L0)
+}
+
+## brew
+upgrade_brew_formuals(){
+  brew update && brew upgrade
 }
 
 export TERM=screen-256color
