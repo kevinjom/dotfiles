@@ -24,3 +24,6 @@ upgrade_brew_formuals(){
 
 export TERM=screen-256color
 export GRADLE_OPTS="$GRADLE_OPTS -Dorg.gradle.daemon=true"
+
+source /usr/local/opt/chruby/share/chruby/chruby.sh
+source /usr/local/opt/chruby/share/chruby/auto.sh
