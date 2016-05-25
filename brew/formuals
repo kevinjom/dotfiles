@@ -11,6 +11,7 @@ bdw-gc
 boost
 brew-cask
 bundler-completion
+chruby
 clang-format
 cloog
 cloog018
@@ -27,6 +28,7 @@ figlet
 fish
 flyway
 fortune
+freetds
 freetype
 gcc49
 gdbm
@@ -88,6 +90,7 @@ readline
 redis
 rig
 ruby-build
+ruby-install
 ruby21
 sbt
 scala

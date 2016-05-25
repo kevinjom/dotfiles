@@ -101,8 +101,6 @@ export NVM_DIR="/Users/${USER}/.nvm"
 
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
-eval "$(rbenv init -)"
-export PATH="$HOME/.rbenv/shims:$PATH"
 
 # z
 . `brew --prefix`/etc/profile.d/z.sh
