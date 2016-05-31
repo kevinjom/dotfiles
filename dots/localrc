@@ -22,6 +22,12 @@ upgrade_brew_formuals(){
   brew update && brew upgrade
 }
 
+## git
+reinit_github(){
+git config --local user.name kevinjom
+git config --local user.email gokevinvan@mail.com
+}
+
 export TERM=screen-256color
 export GRADLE_OPTS="$GRADLE_OPTS -Dorg.gradle.daemon=true"
 
