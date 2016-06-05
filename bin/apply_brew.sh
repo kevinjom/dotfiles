@@ -19,7 +19,9 @@ INSTALLABLE=$(comm -23 $FORMULAS_FILE $INSTALLED_FORMULAS)
 echo "These formuals are ready to install..."
 echo $INSTALLABLE
 
-echo $INSTALLABLE | xargs brew install 2>> $LOG_FILE
+for formula in $INSTALLABLE;do
+  brew install $formula 2>> $LOG_FILE
+done
 
 cat $LOG_FILE
 
