@@ -23,7 +23,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'mattn/gist-vim'
 " Plugin 'mattn/webapi-vim'
 Plugin 'vim-airline/vim-airline'
-Plugin 'kien/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-surround'
 Plugin 'rking/ag.vim'
@@ -47,7 +47,7 @@ Plugin 'tpope/vim-commentary'
 " Plugin 'Shougo/unite.vim'
 " Plugin 'mhinz/vim-startify'
 " Plugin 'benmills/vimux'
-" Plugin 'jceb/vim-orgmode'
+" Plugin 'jceb/vim-orgmode
 " Plugin 'nathanaelkane/vim-indent-guides'
 " Plugin 'Yggdroot/indentLine'
 " Plugin 'vim-scripts/SyntaxRange'
@@ -55,7 +55,7 @@ Plugin 'tpope/vim-commentary'
 Plugin 'haya14busa/incsearch.vim'
 Plugin 'haya14busa/incsearch-fuzzy.vim'
 " Plugin 'vitalk/vim-simple-todo'
-
+Plugin 'thoughtbot/vim-rspec'
 
 
 " All of your Plugins must be added before the following line

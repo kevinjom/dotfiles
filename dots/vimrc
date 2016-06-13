@@ -78,3 +78,7 @@ let g:UltiSnipsEditSplit="vertical"
 " insearch
 map z/ <Plug>(incsearch-fuzzy-/)
 map z? <Plug>(incsearch-fuzzy-?)
+
+" vim-rspec
+map <Leader>tf :call RunCurrentSpecFile()<CR>
+map <Leader>tc :call RunNearestSpec()<CR>
