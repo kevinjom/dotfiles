@@ -25,7 +25,7 @@ upgrade_brew_formuals(){
 ## git
 reinit_github(){
 git config --local user.name kevinjom
-git config --local user.email gokevinvan@mail.com
+git config --local user.email gokevinvan@gmail.com
 }
 
 export TERM=screen-256color
