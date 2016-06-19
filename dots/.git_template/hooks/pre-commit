@@ -1,0 +1,9 @@
+#!/bin/bash
+
+GITHUB="git@github.com"
+
+if [ "$GITHUB" == $(git remote -v | head -1 | grep -o $GITHUB) ]; then
+  git config --local user.email gokevinvan@gmail.com
+  git config --local user.name "kevinjom"
+fi
+
