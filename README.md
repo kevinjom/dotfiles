@@ -7,16 +7,16 @@ My dotfiles
 
 1. Clone this repo
 
-```
-git clone https://github.com/kevinjom/dotfiles.git
-```
+    ```
+    git clone https://github.com/kevinjom/dotfiles.git
+    ```
 
 2. Run the scripts to apply changes to your system
 
-```
-./bin/apply_dotfiles.sh # apply the dotfiles
-./bin/apply_brew.sh  # install the missing brew formulas
-```
+    ```
+    ./bin/apply_dotfiles.sh # apply the dotfiles
+    ./bin/apply_brew.sh  # install the missing brew formulas
+    ```
 
 ### Contribution
 
