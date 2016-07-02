@@ -2,7 +2,7 @@
 
 GITHUB="git@github.com"
 
-if [ "$GITHUB" == $(git remote -v | head -1 | grep -o $GITHUB) ]; then
+if [ "$GITHUB" == $(git remote -v | grep -o $GITHUB | head -1) ]; then
   git config --local user.email gokevinvan@gmail.com
   git config --local user.name "kevinjom"
 fi
