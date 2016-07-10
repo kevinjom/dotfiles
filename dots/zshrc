@@ -88,10 +88,6 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 . ~/.aliases
 
-export AWS_CLI=/usr/local/bin/aws
-source /Users/${USER}/github/rea/tools/saml-aws-functions/bash-functions
-
-
 # nvm
 export NVM_DIR="/Users/${USER}/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
