@@ -42,7 +42,7 @@ Plugin 'terryma/vim-multiple-cursors'
 " Plugin 'rizzatti/dash.vim'
 " Plugin 'SirVer/ultisnips'
 " Plugin 'chrisbra/csv.vim'
-Plugin 'kmyusuf3/numbers.vim'
+Plugin 'myusuf3/numbers.vim'
 Plugin 'tpope/vim-commentary'
 " Plugin 'Shougo/unite.vim'
 " Plugin 'mhinz/vim-startify'
@@ -56,6 +56,7 @@ Plugin 'haya14busa/incsearch.vim'
 Plugin 'haya14busa/incsearch-fuzzy.vim'
 " Plugin 'vitalk/vim-simple-todo'
 Plugin 'thoughtbot/vim-rspec'
+Plugin 'tpope/vim-endwise'
 
 
 " All of your Plugins must be added before the following line
