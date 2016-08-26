@@ -5,6 +5,10 @@ endif
 
 syntax on
 
+filetype on
+filetype indent on
+filetype plugin on
+
 let mapleader=" "      " leader key
 
 set clipboard=unnamed  " copy to system clipboard
