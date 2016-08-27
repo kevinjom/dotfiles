@@ -66,6 +66,7 @@ nnoremap <Down> <NOP>
 let NERDTreeShowHidden=1
 let g:ctrlp_show_hidden = 1
 
+" syntastic
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
