@@ -88,3 +88,9 @@ map z? <Plug>(incsearch-fuzzy-?)
 
 "rust
 map <Leader>rr :RustRun<CR>
+
+" rspec
+:nnoremap <leader>rt :Dispatch rspec %<CR>
+:nnoremap <leader>ra :Dispatch rspec .<CR>
+:nnoremap <leader>rl :execute "Dispatch rspec %:" . line(".")<CR>
+
