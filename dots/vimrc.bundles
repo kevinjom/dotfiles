@@ -60,6 +60,7 @@ Plugin 'derekwyatt/vim-scala'
 Plugin 'rust-lang/rust.vim'
 " Plugin 'jiangmiao/auto-pairs'
 Plugin 'ecomba/vim-ruby-refactoring'
+Plugin 'tpope/vim-dispatch'
 
 
 " All of your Plugins must be added before the following line
