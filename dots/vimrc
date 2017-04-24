@@ -94,3 +94,5 @@ map <Leader>rr :RustRun<CR>
 :nnoremap <leader>ra :Dispatch rspec .<CR>
 :nnoremap <leader>rl :execute "Dispatch rspec %:" . line(".")<CR>
 
+" java
+:nnoremap <leader>jc :!javac %<CR>
