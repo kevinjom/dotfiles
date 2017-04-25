@@ -96,3 +96,6 @@ map <Leader>rr :RustRun<CR>
 
 " java
 :nnoremap <leader>jc :!javac %<CR>
+
+" ruby
+:nnoremap <leader>rr :!ruby %<CR>
