@@ -98,4 +98,4 @@ map <Leader>rr :RustRun<CR>
 :nnoremap <leader>jc :!javac %<CR>
 
 " ruby
-:nnoremap <leader>rr :!ruby %<CR>
+:nnoremap <leader>rr :!ruby -r rb-readline %<CR>

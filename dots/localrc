@@ -22,6 +22,11 @@ upgrade_brew_formuals(){
   brew update && brew upgrade
 }
 
+## open with IDEA
+idea() {
+  open $1 -a "IntelliJ IDEA 15"
+}
+
 export TERM=screen-256color
 export GRADLE_OPTS="$GRADLE_OPTS -Dorg.gradle.daemon=true"
 
