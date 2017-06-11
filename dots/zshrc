@@ -52,10 +52,10 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(z git docker bundler)
+# plugins=(z git docker bundler zsh-completions)
 # plugins=(z java git aws gem brew zsh-syntax-highlighting  ruby bundler docker docker-compose chruby)
 # plugins=(z java emoji git aws gem autojump rackup brew zsh-syntax-highlighting sbt ruby bundler rails docker docker-compose vagrant mvn hub docker-machine npm vi-mode chruby)
-# plugins=(z git autojump)
+plugins=(zsh-completions)
 
 # User configuration
 
@@ -114,6 +114,9 @@ eval "$(jenv init -)"
 
 # localrc
 source ~/.localrc
+
+# zsh-completions
+autoload -U compinit && compinit
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/${USER}/.sdkman"
