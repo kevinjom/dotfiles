@@ -7,7 +7,7 @@ export ZSH="/Users/${USER}/.oh-my-zsh"
 # time that oh-my-zsh is loaded.
 #ZSH_THEME="af-magic"
 # ZSH_THEME="agnoster"
-ZSH_THEME="robbyrussell"
+ZSH_THEME=""
 # ZSH_THEME="avit"
 
 # Uncomment the following line to use case-sensitive completion.
