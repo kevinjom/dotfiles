@@ -69,7 +69,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
+export EDITOR='vim'
 # else
 #   export EDITOR='mvim'
 # fi
@@ -104,13 +104,13 @@ eval "$(jenv init -)"
 . `brew --prefix`/etc/profile.d/z.sh
 
 # fresh
- . ~/.fresh/build/shell.sh
+. ~/.fresh/build/shell.sh
 
 ########################################
 # zsh-syntax-highlighting
 # generally, this shuold be the end of this file
 ########################################
- source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # localrc
 source ~/.localrc

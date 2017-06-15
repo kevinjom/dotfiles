@@ -6,8 +6,6 @@ rm_docker_containers(){
   docker ps -aq | xargs docker rm -f
 }
 
-##  docker
-
 start_docker(){
   docker_tool_dir="/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts"
   bash "$docker_tool_dir/start.sh"
@@ -27,7 +25,9 @@ idea() {
   open $1 -a "IntelliJ IDEA 15"
 }
 
-export TERM=screen-256color
+## if this is not in a tmux session, set term to `xterm-256color`
+[[ $TMUX = "" ]] && export TERM="xterm-256color"
+
 export GRADLE_OPTS="$GRADLE_OPTS -Dorg.gradle.daemon=true"
 
 export BUNDLER_EDITOR=vim
