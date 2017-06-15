@@ -106,12 +106,6 @@ eval "$(jenv init -)"
 # fresh
 . ~/.fresh/build/shell.sh
 
-########################################
-# zsh-syntax-highlighting
-# generally, this shuold be the end of this file
-########################################
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
 # localrc
 source ~/.localrc
 
@@ -122,6 +116,9 @@ autoload -U compinit && compinit
 autoload -U promptinit; promptinit
 prompt pure
 
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="/Users/${USER}/.sdkman"
-[[ -s "/Users/${USER}/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/${USER}/.sdkman/bin/sdkman-init.sh"
+########################################
+# zsh-syntax-highlighting
+# generally, this shuold be the end of this file
+########################################
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
