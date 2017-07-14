@@ -16,7 +16,7 @@ set clipboard=unnamed  " copy to system clipboard
 set nu
 set backspace=2
 set textwidth=80
-" set colorcolumn=+2
+" set colorcolumn=+3
 
 " set hlsearch  " highlight search
 set ic        " case insenstive search
@@ -99,3 +99,7 @@ map <Leader>rr :RustRun<CR>
 
 " ruby
 :nnoremap <leader>rr :!ruby -r rb-readline %<CR>
+
+" ctrlp smart tabs
+let g:ctrlp_extensions = ['smarttabs']
+nnoremap <leader>e :CtrlPSmartTabs<CR>
