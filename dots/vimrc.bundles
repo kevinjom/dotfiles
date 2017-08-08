@@ -63,6 +63,7 @@ Plugin 'ecomba/vim-ruby-refactoring'
 Plugin 'tpope/vim-dispatch'
 Plugin 'mattn/emmet-vim'
 Plugin 'DavidEGx/ctrlp-smarttabs'
+Plugin 'johngrib/vim-game-snake'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

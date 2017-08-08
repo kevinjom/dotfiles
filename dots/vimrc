@@ -37,6 +37,8 @@ set listchars=""                  " Reset the listchars
 set listchars=tab:\ \             " a tab should display as "  ", trailing whitespace as "."
 set listchars+=trail:.            " show trailing spaces as dots
 
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip
+
 " autocmd
 " autocmd VimEnter * execute 'NERDTree' | wincmd p
 
@@ -63,6 +65,7 @@ nnoremap <Down> <NOP>
 " option settings for plugins
 " ---------------------------------
 
+let g:ctrlp_custom_ignore='node_modules\|DS_Store\|bower_components'
 let NERDTreeShowHidden=1
 let g:ctrlp_show_hidden = 1
 
