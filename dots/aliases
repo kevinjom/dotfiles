@@ -2,6 +2,7 @@ alias ll='ls -alh'
 alias tailf='tailf -f'
 
 alias be='bundle exec'
+alias bi='bundle install'
 alias mvni='mvn clean install -Dmaven.test.skip -DskipTests -DdownloadSources'
 alias dc='docker-compose'
 alias cl='clear'

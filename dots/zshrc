@@ -55,7 +55,7 @@ ZSH_THEME=""
 # plugins=(z git docker bundler zsh-completions)
 # plugins=(z java git aws gem brew zsh-syntax-highlighting  ruby bundler docker docker-compose chruby)
 # plugins=(z java emoji git aws gem autojump rackup brew zsh-syntax-highlighting sbt ruby bundler rails docker docker-compose vagrant mvn hub docker-machine npm vi-mode chruby)
-plugins=(zsh-completions zsh-syntax-highlighting docker)
+plugins=(zsh-completions zsh-syntax-highlighting docker git)
 
 # User configuration
 
