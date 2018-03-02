@@ -65,10 +65,10 @@ nnoremap <Down> <NOP>
 " option settings for plugins
 " ---------------------------------
 
-let g:ctrlp_custom_ignore='node_modules\|DS_Store\|bower_components|.gradle'
+let g:ctrlp_custom_ignore='node_modules\|DS_Store\|bower_components'
+let g:ctrlp_working_path_mode = 'a'
 let NERDTreeShowHidden=1
 let g:ctrlp_show_hidden = 1
-let g:ctrlp_working_path_mode = 'w'
 
 " syntastic
 set statusline+=%#warningmsg#
@@ -81,6 +81,9 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
 let g:syntastic_mode_map = { 'passive_filetypes': ['java'] }
+
+let g:jsx_ext_required = 0 " Allow JSX in normal JS files
+let g:syntastic_javascript_checkers = ['eslint']
 
 " ultisnips
 let g:UltiSnipsExpandTrigger="<tab>"
@@ -107,11 +110,3 @@ map <Leader>rr :RustRun<CR>
 " ctrlp smart tabs
 let g:ctrlp_extensions = ['smarttabs']
 nnoremap <leader>e :CtrlPSmartTabs<CR>
-
-" emmet
-" let g:user_emmet_mode='n'    "only enable normal mode functions.
-" let g:user_emmet_mode='inv'  "enable all functions, which is equal to
-let g:user_emmet_mode='a'    "enable all function in all mode.
-let g:user_emmet_install_global = 0
-autocmd FileType html,css,eruby EmmetInstall
-let g:user_emmet_leader_key='<C-z>'

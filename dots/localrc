@@ -40,3 +40,8 @@ source /usr/local/opt/chruby/share/chruby/auto.sh
 kms_encrypt(){
   aws kms encrypt --key-id $1 --plaintext $2 --output text --query CiphertextBlob
 }
+
+## kill process by keyword
+kk(){
+  ps aux | grep $1 | awk '{print $2;}' | xargs kill -9
+}

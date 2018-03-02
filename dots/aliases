@@ -34,3 +34,6 @@ alias pry='pry -r rb-readline'
 alias irb='irb -r rb-readline'
 
 alias javap='javap -c -verbose'
+
+alias goodnight='say "good night" && echo "Sleep tight and don’t let the bedbugs
+bite."'
