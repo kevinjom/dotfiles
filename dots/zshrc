@@ -103,9 +103,6 @@ eval "$(jenv init -)"
 # z
 . `brew --prefix`/etc/profile.d/z.sh
 
-# fresh
-. ~/.fresh/build/shell.sh
-
 # localrc
 source ~/.localrc
 

@@ -20,11 +20,6 @@ upgrade_brew_formuals(){
   brew update && brew upgrade
 }
 
-## open with IDEA
-idea() {
-  open $1 -a "IntelliJ IDEA 15"
-}
-
 ## if this is not in a tmux session, set term to `xterm-256color`
 [[ $TMUX = "" ]] && export TERM="xterm-256color"
 

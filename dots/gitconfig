@@ -1,5 +1,3 @@
-[init]
-  templatedir = ~/.git_template
 [branch]
 	autosetupmerge = true
 	autosetuprebase = always
