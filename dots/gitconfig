@@ -28,7 +28,6 @@
 	smudge = git media smudge %f
 	required = true
 [core]
-	editor = /usr/local/bin/vim
-[user]
-	email = gokevinvan@gmail.com
-	name = KevinFan
+	editor = vim
+[credential]
+	helper = osxkeychain
