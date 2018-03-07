@@ -1,0 +1,64 @@
+tap "homebrew/core"
+tap "homebrew/bundle"
+tap "caskroom/versions"
+tap "caskroom/cask"
+tap "wix/brew"
+brew "ack", link: false
+brew "autoconf", link: false
+brew "autojump", link: false
+brew "automake"
+brew "openssl"
+brew "gdbm"
+brew "awscli", link: false
+brew "bash-completion", link: false
+brew "bdw-gc", link: false
+brew "bison"
+brew "bundler-completion", link: false
+brew "chruby"
+brew "clang-format", link: false
+brew "cloog", link: false
+brew "cmake", link: false
+brew "cmatrix", link: false
+brew "consul", link: false
+brew "cowsay", link: false
+brew "cscope", link: false
+brew "ctags", link: false
+brew "direnv"
+brew "docker", link: false
+brew "emacs", link: false
+brew "figlet", link: false
+brew "fish", link: false
+brew "fortune", link: false
+brew "freetype", link: false
+brew "git"
+brew "jenv"
+brew "libffi"
+brew "libyaml"
+brew "mas"
+brew "node@8", link: true
+brew "nvm"
+brew "ruby"
+brew "ruby-install"
+brew "swiftlint"
+brew "the_silver_searcher"
+brew "watchman"
+brew "yarn"
+brew "z"
+brew "zsh-syntax-highlighting"
+brew "wix/brew/applesimutils", args: ["HEAD"]
+cask "alfred"
+cask "appcleaner"
+cask "caffeine"
+cask "docker"
+cask "google-chrome"
+cask "intellij-idea"
+cask "iterm2"
+cask "macvim"
+cask "react-native-debugger"
+cask "slack"
+cask "spectacle"
+cask "zoom"
+cask "zoomus"
+cask "caskroom/versions/java8"
+mas "WeChat", id: 836500024
+mas "Xcode", id: 497799835
