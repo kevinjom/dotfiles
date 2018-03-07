@@ -15,7 +15,7 @@ My dotfiles
 
     ```
     ./bin/apply_dotfiles.sh # apply the dotfiles
-    ./bin/apply_brew.sh  # install the missing brew formulas
+    cd brew && brew bundle  # install the missing brew formulas
     ```
 
 ### Contribution
