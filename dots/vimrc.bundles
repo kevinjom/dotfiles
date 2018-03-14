@@ -1,88 +1,62 @@
 " ############################################################
-"   Vundle config BEGIN
+"   Plug config BEGIN
 " ############################################################
 set nocompatible              " be iMproved, required
-filetype off                  " required
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
+call plug#begin('~/.vim/plugged')
 
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
+Plug 'tpope/vim-fugitive'
+" Plug 'mattn/gist-vim'
+" Plug 'mattn/webapi-vim'
+Plug 'vim-airline/vim-airline'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'scrooloose/nerdtree'
+Plug 'tpope/vim-surround'
+Plug 'rking/ag.vim'
+Plug 'edsono/vim-matchit'
+Plug 'bronson/vim-trailing-whitespace'
+Plug 'ervandew/supertab'
+" Plug 'majutsushi/tagbar'
+Plug 'easymotion/vim-easymotion'
+Plug 'terryma/vim-multiple-cursors'
+" Plug 'rstacruz/skarkup'
+Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
+Plug 'tpope/vim-rails', { 'for': 'ruby' }
+Plug 'scrooloose/syntastic'
+" Plug 'roman/golden-ratio'
+" Plug 'Valloric/YouCompleteMe'
+" Plug 'rizzatti/dash.vim'
+Plug 'SirVer/ultisnips'
+" Plug 'chrisbra/csv.vim'
+Plug 'myusuf3/numbers.vim'
+Plug 'tpope/vim-commentary'
+" Plug 'Shougo/unite.vim'
+" Plug 'mhinz/vim-startify'
+" Plug 'benmills/vimux'
+" Plug 'jceb/vim-orgmode
+" Plug 'nathanaelkane/vim-indent-guides'
+" Plug 'Yggdroot/indentLine'
+" Plug 'vim-scripts/SyntaxRange'
+" Plug 'edkolev/tmuxline.vim'
+Plug 'haya14busa/incsearch.vim'
+Plug 'haya14busa/incsearch-fuzzy.vim'
+" Plug 'vitalk/vim-simple-todo'
+Plug 'tpope/vim-endwise'
+Plug 'derekwyatt/vim-scala', { 'for': 'scala' }
+Plug 'rust-lang/rust.vim', { 'for': 'rust' }
+" Plug 'jiangmiao/auto-pairs'
+Plug 'ecomba/vim-ruby-refactoring', { 'for': 'ruby' }
+Plug 'tpope/vim-dispatch'
+Plug 'mattn/emmet-vim'
+Plug 'DavidEGx/ctrlp-smarttabs'
+" Plug 'johngrib/vim-game-snake'
+Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
+Plug 'mxw/vim-jsx', { 'for': 'javascript.jsx' }
+Plug 'epilande/vim-react-snippets', { 'for': 'javascript.jsx' }
 
-" The following are examples of different formats supported.
-" Keep Plugin commands between vundle#begin/end.
-"
-" plugin on GitHub repo
-"
-
-Plugin 'tpope/vim-fugitive'
-" Plugin 'mattn/gist-vim'
-" Plugin 'mattn/webapi-vim'
-Plugin 'vim-airline/vim-airline'
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'tpope/vim-surround'
-Plugin 'rking/ag.vim'
-Plugin 'edsono/vim-matchit'
-Plugin 'bronson/vim-trailing-whitespace'
-Plugin 'ervandew/supertab'
-" Plugin 'majutsushi/tagbar'
-Plugin 'easymotion/vim-easymotion'
-Plugin 'terryma/vim-multiple-cursors'
-" Plugin 'rstacruz/skarkup'
-Plugin 'vim-ruby/vim-ruby'
-Plugin 'tpope/vim-rails'
-Plugin 'scrooloose/syntastic'
-" Plugin 'roman/golden-ratio'
-" Plugin 'Valloric/YouCompleteMe'
-" Plugin 'rizzatti/dash.vim'
-Plugin 'SirVer/ultisnips'
-" Plugin 'chrisbra/csv.vim'
-Plugin 'myusuf3/numbers.vim'
-Plugin 'tpope/vim-commentary'
-" Plugin 'Shougo/unite.vim'
-" Plugin 'mhinz/vim-startify'
-" Plugin 'benmills/vimux'
-" Plugin 'jceb/vim-orgmode
-" Plugin 'nathanaelkane/vim-indent-guides'
-" Plugin 'Yggdroot/indentLine'
-" Plugin 'vim-scripts/SyntaxRange'
-" Plugin 'edkolev/tmuxline.vim'
-Plugin 'haya14busa/incsearch.vim'
-Plugin 'haya14busa/incsearch-fuzzy.vim'
-" Plugin 'vitalk/vim-simple-todo'
-Plugin 'tpope/vim-endwise'
-Plugin 'derekwyatt/vim-scala'
-Plugin 'rust-lang/rust.vim'
-" Plugin 'jiangmiao/auto-pairs'
-Plugin 'ecomba/vim-ruby-refactoring'
-Plugin 'tpope/vim-dispatch'
-Plugin 'mattn/emmet-vim'
-Plugin 'DavidEGx/ctrlp-smarttabs'
-Plugin 'johngrib/vim-game-snake'
-Plugin 'pangloss/vim-javascript'
-Plugin 'mxw/vim-jsx'
-Plugin 'epilande/vim-react-snippets'
-
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
-"
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
+call plug#end()
 
 " ############################################################
-"   Vundle config END
+"   Plug config END
 " ############################################################
+
