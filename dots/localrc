@@ -40,3 +40,8 @@ kms_encrypt(){
 kk(){
   ps aux | grep $1 | awk '{print $2;}' | xargs kill -9
 }
+
+## remove git branch by keyword
+rm_br(){
+  git branch | grep -v master | grep $1 | xargs git branch -D
+}
