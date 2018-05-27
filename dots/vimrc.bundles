@@ -53,6 +53,7 @@ Plug 'DavidEGx/ctrlp-smarttabs'
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
 Plug 'mxw/vim-jsx', { 'for': 'javascript.jsx' }
 Plug 'epilande/vim-react-snippets', { 'for': 'javascript.jsx' }
+Plug 'kien/rainbow_parentheses.vim'
 
 call plug#end()
 
