@@ -13,7 +13,7 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-surround'
 Plug 'rking/ag.vim'
-Plug 'edsono/vim-matchit'
+Plug 'andymass/vim-matchup'
 Plug 'bronson/vim-trailing-whitespace'
 Plug 'ervandew/supertab'
 Plug 'majutsushi/tagbar'
@@ -41,7 +41,7 @@ Plug 'tpope/vim-commentary'
 Plug 'haya14busa/incsearch.vim'
 Plug 'haya14busa/incsearch-fuzzy.vim'
 " Plug 'vitalk/vim-simple-todo'
-Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-endwise', { 'for': 'rust' }
 Plug 'derekwyatt/vim-scala', { 'for': 'scala' }
 Plug 'rust-lang/rust.vim', { 'for': 'rust' }
 " Plug 'jiangmiao/auto-pairs'
@@ -54,6 +54,7 @@ Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
 Plug 'mxw/vim-jsx', { 'for': 'javascript.jsx' }
 Plug 'epilande/vim-react-snippets', { 'for': 'javascript.jsx' }
 Plug 'kien/rainbow_parentheses.vim'
+Plug 'tweekmonster/braceless.vim'
 
 call plug#end()
 

@@ -45,3 +45,6 @@ kk(){
 rm_br(){
   git branch | grep -v master | grep $1 | xargs git branch -D
 }
+
+export ANDROID_SDK_ROOT=~/Library/Android/sdk
+export PATH=$ANDROID_SDK_ROOT/emulator:$ANDROID_SDK_ROOT/tools:$ANDROID_SDK_ROOT/tools/bin:$ANDROID_SDK_ROOT/platform-tools:$PATH
