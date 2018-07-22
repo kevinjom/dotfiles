@@ -1,4 +1,24 @@
+
+
+#
+# User configuration sourced by interactive shells
+#
+
 # Change default zim location
+export ZIM_HOME=${ZDOTDIR:-${HOME}}/.zim
+
+# Start zim
+[[ -s ${ZIM_HOME}/init.zsh ]] && source ${ZIM_HOME}/init.zsh
+
+#
+# User configuration sourced by interactive shells
+#
+
+# Change default zim location
+export ZIM_HOME=${ZDOTDIR:-${HOME}}/.zim
+
+# Start zim
+[[ -s ${ZIM_HOME}/init.zsh ]] && source ${ZIM_HOME}/init.zsh# Change default zim location
 export ZIM_HOME=${ZDOTDIR:-${HOME}}/.zim
 
 # Start zim
@@ -6,7 +26,6 @@ export ZIM_HOME=${ZDOTDIR:-${HOME}}/.zim
 
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 export EDITOR='vim'
-
 # aliases
 source ~/.aliases
 
@@ -25,7 +44,7 @@ which jenv > /dev/null && export PATH="$HOME/.jenv/bin:$PATH" && eval "$(jenv in
 source ~/.localrc
 
 # zsh-completions
-autoload -U compinit && compinit
+# autoload -U compinit && compinit
 
 # pure prompt
 autoload -U promptinit; promptinit
@@ -40,4 +59,3 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 eval "$(direnv hook zsh)"
-
