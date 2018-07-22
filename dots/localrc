@@ -26,7 +26,6 @@ upgrade_brew_formuals(){
 export GRADLE_OPTS="$GRADLE_OPTS -Dorg.gradle.daemon=true"
 
 export BUNDLER_EDITOR=vim
-export ANDROID_HOME=/Users/${USER}/Library/Android/sdk
 
 source /usr/local/opt/chruby/share/chruby/chruby.sh
 source /usr/local/opt/chruby/share/chruby/auto.sh
@@ -46,5 +45,6 @@ rm_br(){
   git branch | grep -v master | grep $1 | xargs git branch -D
 }
 
-export ANDROID_SDK_ROOT=~/Library/Android/sdk
+export ANDROID_NDK_HOME=/usr/local/share/android-ndk
+export ANDROID_SDK_ROOT=/usr/local/share/android-sdk
 export PATH=$ANDROID_SDK_ROOT/emulator:$ANDROID_SDK_ROOT/tools:$ANDROID_SDK_ROOT/tools/bin:$ANDROID_SDK_ROOT/platform-tools:$PATH
