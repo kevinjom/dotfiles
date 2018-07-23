@@ -44,7 +44,7 @@ which jenv > /dev/null && export PATH="$HOME/.jenv/bin:$PATH" && eval "$(jenv in
 source ~/.localrc
 
 # zsh-completions
-# autoload -U compinit && compinit
+autoload -Uz compinit && compinit
 
 # pure prompt
 autoload -U promptinit; promptinit
