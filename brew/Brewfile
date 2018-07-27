@@ -4,12 +4,11 @@ tap "caskroom/versions"
 tap "caskroom/cask"
 tap "wix/brew"
 brew "ack", link: false
+brew "ant"
+brew "asdf"
 brew "autoconf", link: false
 brew "autojump", link: false
 brew "automake"
-brew "openssl"
-brew "gdbm"
-brew "python"
 brew "awscli", link: false
 brew "bash-completion", link: false
 brew "bdw-gc", link: false
@@ -33,51 +32,79 @@ brew "figlet", link: false
 brew "fish", link: false
 brew "fortune", link: false
 brew "freetype", link: false
+brew "gdbm"
 brew "git"
-brew "jenv"
-brew "libffi"
-brew "gnupg"
+brew "git", link: false
 brew "git-secret"
 brew "git-secrets"
 brew "gnu-sed"
+brew "gnupg"
+brew "gradle"
+brew "httpie"
 brew "jenv"
+brew "jq"
+brew "libffi"
 brew "libyaml"
 brew "mas"
+brew "maven"
+brew "mysql", restart_service: true
 brew "node@8", link: true
 brew "nvm"
+brew "openssl"
+brew "postgresql", restart_service: true
 brew "pyenv"
+brew "python"
 brew "ruby"
 brew "ruby-install"
 brew "swiftlint"
 brew "the_silver_searcher"
 brew "tig"
+brew "tomanthony/brews/itermocil"
 brew "vim"
 brew "watchman"
+brew "wix/brew/applesimutils", args: ["HEAD"]
 brew "yarn"
 brew "z"
 brew "zsh"
+brew "zsh", link: false
 brew "zsh-syntax-highlighting"
-brew "wix/brew/applesimutils", args: ["HEAD"]
 cask "alfred"
+cask "android-studio"
 cask "appcleaner"
 cask "caffeine"
+cask "caskroom/versions/java8"
+cask "dashlane"
 cask "docker"
 cask "drawio"
 cask "google-chrome"
 cask "google-hangouts"
 cask "intellij-idea"
 cask "iterm2"
+cask "java8"
+cask "kitematic"
+cask "macdown"
 cask "macvim"
 cask "osxfuse"
 cask "react-native-debugger"
 cask "slack"
 cask "spectacle"
+cask "sublime-text"
+cask "telegram"
 cask "veracrypt"
+cask "visual-studio-code"
 cask "whatsapp"
 cask "xiami"
 cask "youdaodict"
 cask "zoomus"
-cask "caskroom/versions/java8"
 mas "Airmail 3", id: 918858936
 mas "WeChat", id: 836500024
 mas "Xcode", id: 497799835
+tap "caskroom/cask"
+tap "caskroom/versions"
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/cask-versions"
+tap "homebrew/core"
+tap "homebrew/services"
+tap "tomanthony/brews"
+tap "wix/brew"
