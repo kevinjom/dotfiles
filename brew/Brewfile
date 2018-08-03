@@ -1,8 +1,3 @@
-tap "homebrew/core"
-tap "homebrew/bundle"
-tap "caskroom/versions"
-tap "caskroom/cask"
-tap "wix/brew"
 brew "ack", link: false
 brew "ant"
 brew "asdf"
