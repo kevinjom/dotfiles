@@ -7,18 +7,21 @@
 	ap = add -p
 	br = branch
 	co = checkout
+	cob = checkout -b
+  com = checkout master
 	cp = checkout -p
 	ci = commit
+  ca = commit -am
 	cv = commit -v
 	dc = diff --cached
 	st=status
-	sc = svn dcommit
-	sr = svn rebase
 	pr = pull --rebase
 	ps = push
+  standup = log --since=yesterday.9am
 	l = log --graph --pretty=format:'%C(red)%h%Creset %C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=short --all
   cl = clean -f
   serve = !git daemon --reuseaddr --verbose  --base-path=. --export-all ./.git
+  staash = stash --all
 [color]
 	status = auto
 	diff = auto
