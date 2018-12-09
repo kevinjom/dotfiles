@@ -6,11 +6,6 @@ rm_docker_containers(){
   docker ps -aq | xargs docker rm -f
 }
 
-start_docker(){
-  docker_tool_dir="/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts"
-  bash "$docker_tool_dir/start.sh"
-}
-
 rm_empty_files(){
   rm -i *(.L0)
 }
@@ -27,8 +22,8 @@ export GRADLE_OPTS="$GRADLE_OPTS -Dorg.gradle.daemon=true"
 
 export BUNDLER_EDITOR=vim
 
-source /usr/local/opt/chruby/share/chruby/chruby.sh
-source /usr/local/opt/chruby/share/chruby/auto.sh
+[[ -f /usr/local/opt/chruby/share/chruby/chruby.sh ]] && source /source /usr/local/opt/chruby/share/chruby/chruby.sh
+[[ -f /usr/local/opt/chruby/share/chruby/auto.sh ]] && source /usr/local/opt/chruby/share/chruby/auto.sh
 
 ## KMS encryp
 kms_encrypt(){
@@ -44,7 +39,5 @@ kk(){
 rm_br(){
   git branch | grep -v master | grep $1 | xargs git branch -D
 }
-export ANDROID_SDK_ROOT=/Users/${USER}/Library/Android/sdk
-export ANDROID_HOME="$ANDROID_SDK_ROOT"
-export PATH=$ANDROID_SDK_ROOT/emulator:$ANDROID_SDK_ROOT/tools:$ANDROID_SDK_ROOT/tools/bin:$ANDROID_SDK_ROOT/platform-tools:$PATH
-source /usr/local/opt/asdf/asdf.sh
+
+uname | grep -i darwin && source ~/.darwinrc
