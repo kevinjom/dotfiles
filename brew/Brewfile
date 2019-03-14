@@ -4,7 +4,8 @@ brew "asdf"
 brew "autoconf", link: false
 brew "autojump", link: false
 brew "automake"
-brew "awscli", link: false
+brew "aws-iam-authenticator"
+brew "awscli"
 brew "bash-completion", link: false
 brew "bdw-gc", link: false
 brew "bfg"
@@ -14,6 +15,7 @@ brew "carthage"
 brew "chruby"
 brew "clang-format", link: false
 brew "cloog", link: false
+brew "cloudfoundry/tap/cf-cli"
 brew "cmake", link: false
 brew "cmatrix", link: false
 brew "consul", link: false
@@ -24,9 +26,11 @@ brew "direnv"
 brew "docker", link: false
 brew "emacs", link: false
 brew "figlet", link: false
-brew "fish", link: false
+brew "fish"
 brew "fortune", link: false
 brew "freetype", link: false
+brew "gauge"
+brew "gawk"
 brew "gdbm"
 brew "git"
 brew "git", link: false
@@ -35,44 +39,64 @@ brew "git-secrets"
 brew "gnu-sed"
 brew "gnupg"
 brew "gradle"
+brew "haskell-stack"
+brew "htop"
 brew "httpie"
 brew "jenv"
 brew "jq"
+brew "kotlin"
+brew "kubernetes-helm"
 brew "libffi"
 brew "libyaml"
 brew "mas"
 brew "maven"
+brew "moncho/dry/dry"
 brew "mysql", restart_service: true
+brew "mysql@5.7"
 brew "node@8", link: true
 brew "nvm"
 brew "openssl"
+brew "pass"
+brew "pinentry"
 brew "postgresql", restart_service: true
 brew "pyenv"
 brew "python"
-brew "ruby"
+brew "readline"
+brew "ruby", link: true
 brew "ruby-install"
-brew "swiftlint"
+brew "softhsm"
 brew "the_silver_searcher"
 brew "tig"
+brew "tmux"
 brew "tomanthony/brews/itermocil"
+brew "tree"
 brew "vim"
 brew "watchman"
-brew "wix/brew/applesimutils", args: ["HEAD"]
+brew "wget"
 brew "yarn"
 brew "z"
 brew "zsh"
 brew "zsh", link: false
+brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
 cask "alfred"
 cask "android-studio"
 cask "appcleaner"
+cask "atom"
+cask "authy"
 cask "caffeine"
 cask "caskroom/versions/java8"
 cask "dashlane"
 cask "docker"
 cask "drawio"
+cask "evernote"
+cask "franz"
+cask "google-chat"
 cask "google-chrome"
 cask "google-hangouts"
+cask "gpg-suite"
+cask "handshaker"
+cask "hyper"
 cask "intellij-idea"
 cask "iterm2"
 cask "java8"
@@ -81,25 +105,35 @@ cask "macdown"
 cask "macvim"
 cask "osxfuse"
 cask "react-native-debugger"
+cask "scroll-reverser"
+cask "sequel-pro"
+cask "setapp"
 cask "slack"
 cask "spectacle"
+cask "spotify"
 cask "sublime-text"
+cask "tableplus"
 cask "telegram"
 cask "veracrypt"
 cask "visual-studio-code"
 cask "whatsapp"
 cask "xiami"
+cask "xmind"
 cask "youdaodict"
 cask "zoomus"
 mas "Airmail 3", id: 918858936
-mas "WeChat", id: 836500024
+mas "Keynote", id: 409183694
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
+mas "Wireless@SG", id: 1222815823
 mas "Xcode", id: 497799835
-tap "caskroom/cask"
-tap "caskroom/versions"
+tap "cloudfoundry/tap"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
+tap "moncho/dry"
 tap "tomanthony/brews"
+tap "wagoodman/dive"
 tap "wix/brew"
