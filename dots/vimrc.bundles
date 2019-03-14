@@ -5,7 +5,8 @@ set nocompatible              " be iMproved, required
 
 call plug#begin('~/.vim/plugged')
 
-Plug 'tpope/vim-fugitive'
+Plug 'w0rp/ale'
+" Plug 'tpope/vim-fugitive'
 " Plug 'mattn/gist-vim'
 " Plug 'mattn/webapi-vim'
 Plug 'vim-airline/vim-airline'
@@ -22,7 +23,7 @@ Plug 'terryma/vim-multiple-cursors'
 " Plug 'rstacruz/skarkup'
 Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
 Plug 'tpope/vim-rails', { 'for': 'ruby' }
-Plug 'scrooloose/syntastic'
+" Plug 'scrooloose/syntastic'
 " Plug 'roman/golden-ratio'
 " Plug 'Valloric/YouCompleteMe'
 " Plug 'rizzatti/dash.vim'
@@ -30,7 +31,7 @@ Plug 'scrooloose/syntastic'
 " Plug 'chrisbra/csv.vim'
 Plug 'myusuf3/numbers.vim'
 Plug 'tpope/vim-commentary'
-" Plug 'Shougo/unite.vim'
+Plug 'Shougo/denite.nvim'
 " Plug 'mhinz/vim-startify'
 " Plug 'benmills/vimux'
 " Plug 'jceb/vim-orgmode

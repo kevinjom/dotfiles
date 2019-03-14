@@ -9,6 +9,11 @@ alias mvni='mvn clean install -Dmaven.test.skip -DskipTests -DdownloadSources'
 alias dc='docker-compose'
 alias cl='clear'
 alias his='history'
+alias sed='gsed'
+
+alias k='kubectl'
+alias h='helm'
+alias d='docker'
 
 alias -s txt=vim
 alias -s csv=vim
@@ -32,10 +37,14 @@ alias setJdk8='export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)'
 alias lower="tr '[:upper:]' '[:lower:]'"
 alias upper="tr '[:lower:]' '[:upper:]'"
 
-alias pry='pry -r rb-readline'
+# alias pry='pry -r rb-readline'
 alias irb='irb -r rb-readline'
 
 alias javap='javap -c -verbose'
 
 alias goodnight='say "good night" && echo "Sleep tight and don’t let the bedbugs
 bite."'
+
+dei(){
+  docker exec -it $1 bash
+}

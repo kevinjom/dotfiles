@@ -35,3 +35,5 @@
 	editor = vim
 [credential]
 	helper = osxkeychain
+[gpg]
+	program = gpg

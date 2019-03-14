@@ -6,6 +6,19 @@ rm_docker_containers(){
   docker ps -aq | xargs docker rm -f
 }
 
+rm_docker_images() {
+  docker images | grep -i $1 | awk '{print $3}' | xargs docker rmi -f
+}
+
+helm_del_all() {
+  helm ls --short | xargs -L1 helm delete
+}
+
+start_docker(){
+  docker_tool_dir="/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts"
+    bash "$docker_tool_dir/start.sh"
+}
+
 rm_empty_files(){
   rm -i *(.L0)
 }
@@ -41,3 +54,11 @@ rm_br(){
 }
 
 uname | grep -i darwin && source ~/.darwinrc
+
+export ANDROID_SDK_ROOT=/Users/${USER}/Library/Android/sdk
+export ANDROID_HOME="$ANDROID_SDK_ROOT"
+export PATH=$ANDROID_SDK_ROOT/emulator:$ANDROID_SDK_ROOT/tools:$ANDROID_SDK_ROOT/tools/bin:$ANDROID_SDK_ROOT/platform-tools:$PATH
+source /usr/local/opt/asdf/asdf.sh
+
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $HOME/.k8src
