@@ -5,18 +5,27 @@ My dotfiles
 
 ### Usage
 
-1. Clone this repo
+#### Apply dotfiles
 
-    ```
-    git clone https://github.com/kevinjom/dotfiles.git
-    ```
+```
+./bin/apply_dotfiles.sh
 
-2. Run the scripts to apply changes to your system
+```
 
-    ```
-    ./bin/apply_dotfiles.sh # apply the dotfiles
-    cd brew && brew bundle  # install the missing brew formulas
-    ```
+#### Brew formulas
+
+```
+cd brew && brew bundle
+```
+
+#### Useful ruby gems
+
+Make sure you have [Bundler](https://bundler.io/) installed.
+
+```
+cd gems
+bundle
+```
 
 ### Contribution
 
