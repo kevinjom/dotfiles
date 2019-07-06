@@ -59,6 +59,7 @@ export ANDROID_SDK_ROOT=/Users/${USER}/Library/Android/sdk
 export ANDROID_HOME="$ANDROID_SDK_ROOT"
 export PATH=$ANDROID_SDK_ROOT/emulator:$ANDROID_SDK_ROOT/tools:$ANDROID_SDK_ROOT/tools/bin:$ANDROID_SDK_ROOT/platform-tools:$PATH
 source /usr/local/opt/asdf/asdf.sh
+source $HOME/.k8src
 
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $HOME/.k8src

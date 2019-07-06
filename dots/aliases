@@ -9,10 +9,9 @@ alias mvni='mvn clean install -Dmaven.test.skip -DskipTests -DdownloadSources'
 alias dc='docker-compose'
 alias cl='clear'
 alias his='history'
-alias sed='gsed'
-
 alias k='kubectl'
 alias h='helm'
+alias sed='gsed'
 alias d='docker'
 
 alias -s txt=vim
