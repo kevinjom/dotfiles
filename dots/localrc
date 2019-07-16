@@ -35,7 +35,7 @@ export GRADLE_OPTS="$GRADLE_OPTS -Dorg.gradle.daemon=true"
 
 export BUNDLER_EDITOR=vim
 
-[[ -f /usr/local/opt/chruby/share/chruby/chruby.sh ]] && source /source /usr/local/opt/chruby/share/chruby/chruby.sh
+[[ -f /usr/local/opt/chruby/share/chruby/chruby.sh ]] && source /usr/local/opt/chruby/share/chruby/chruby.sh
 [[ -f /usr/local/opt/chruby/share/chruby/auto.sh ]] && source /usr/local/opt/chruby/share/chruby/auto.sh
 
 ## KMS encryp
