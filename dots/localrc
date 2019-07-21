@@ -53,7 +53,7 @@ rm_br(){
   git branch | grep -v master | grep $1 | xargs git branch -D
 }
 
-uname | grep -i darwin && source ~/.darwinrc
+[[ -f ~/.darwinrc ]] && uname | grep -i darwin && source ~/.darwinrc
 
 export ANDROID_SDK_ROOT=/Users/${USER}/Library/Android/sdk
 export ANDROID_HOME="$ANDROID_SDK_ROOT"
