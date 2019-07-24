@@ -76,10 +76,7 @@ rm_br(){
 [[ -f ~/.darwinrc ]] && uname | grep -i darwin && source ~/.darwinrc
 
 source /usr/local/opt/asdf/asdf.sh
-source $HOME/.k8src
-
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source $HOME/.k8src
 
 # nvm
 which nvm > /dev/null && export NVM_DIR="/Users/${USER}/.nvm"  && [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
