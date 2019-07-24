@@ -1,3 +1,23 @@
+source ~/.aliases
+
+autoload -Uz compinit && compinit
+
+# pure prompt
+autoload -U promptinit; promptinit
+prompt pure
+
+# exports
+
+export ANDROID_SDK_ROOT=/Users/${USER}/Library/Android/sdk
+export ANDROID_HOME="$ANDROID_SDK_ROOT"
+export PATH=$ANDROID_SDK_ROOT/emulator:$ANDROID_SDK_ROOT/tools:$ANDROID_SDK_ROOT/tools/bin:$ANDROID_SDK_ROOT/platform-tools:$PATH
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export EDITOR='vim'
+export GPG_TTY=$(tty)
+
+# z
+. `brew --prefix`/etc/profile.d/z.sh
+
 if [ -z $MY_GIT_REPO ];then
   export MY_GIT_REPO=~/github/kevinjom/
 fi
@@ -55,11 +75,19 @@ rm_br(){
 
 [[ -f ~/.darwinrc ]] && uname | grep -i darwin && source ~/.darwinrc
 
-export ANDROID_SDK_ROOT=/Users/${USER}/Library/Android/sdk
-export ANDROID_HOME="$ANDROID_SDK_ROOT"
-export PATH=$ANDROID_SDK_ROOT/emulator:$ANDROID_SDK_ROOT/tools:$ANDROID_SDK_ROOT/tools/bin:$ANDROID_SDK_ROOT/platform-tools:$PATH
 source /usr/local/opt/asdf/asdf.sh
 source $HOME/.k8src
 
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $HOME/.k8src
+
+# nvm
+which nvm > /dev/null && export NVM_DIR="/Users/${USER}/.nvm"  && [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# completions
+. /usr/local/share/zsh/site-functions/
+
+which jenv > /dev/null && export PATH="$HOME/.jenv/bin:$PATH" && eval "$(jenv init -)"
+

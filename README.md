@@ -5,26 +5,8 @@ My dotfiles
 
 ### Usage
 
-#### Apply dotfiles
-
 ```
-./bin/apply_dotfiles.sh
-
-```
-
-#### Brew formulas
-
-```
-cd brew && brew bundle
-```
-
-#### Useful ruby gems
-
-Make sure you have [Bundler](https://bundler.io/) installed.
-
-```
-cd gems
-bundle
+./setup.sh
 ```
 
 ### Contribution
