@@ -6,6 +6,13 @@ autoload -Uz compinit && compinit
 autoload -U promptinit; promptinit
 prompt pure
 
+# zplug
+export ZPLUG_HOME=/usr/local/opt/zplug
+source $ZPLUG_HOME/init.zsh
+zplug "zsh-users/zsh-syntax-highlighting", defer:2
+zplug "zsh-users/zsh-history-substring-search"
+zplug load
+
 # exports
 
 export ANDROID_SDK_ROOT=/Users/${USER}/Library/Android/sdk
