@@ -34,7 +34,7 @@ Plug 'tpope/vim-commentary'
 Plug 'Shougo/denite.nvim'
 " Plug 'mhinz/vim-startify'
 " Plug 'benmills/vimux'
-" Plug 'jceb/vim-orgmode
+Plug 'jceb/vim-orgmode'
 " Plug 'nathanaelkane/vim-indent-guides'
 " Plug 'Yggdroot/indentLine'
 " Plug 'vim-scripts/SyntaxRange'
