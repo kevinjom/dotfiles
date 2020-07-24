@@ -12,6 +12,7 @@ source $ZPLUG_HOME/init.zsh
 zplug "zsh-users/zsh-syntax-highlighting", defer:2
 zplug "zsh-users/zsh-history-substring-search"
 zplug load
+# zplug install
 
 # exports
 
@@ -84,7 +85,6 @@ rm_br(){
 [[ -f ~/.darwinrc ]] && uname | grep -i darwin && source ~/.darwinrc
 
 source /usr/local/opt/asdf/asdf.sh
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # nvm
 which nvm > /dev/null && export NVM_DIR="/Users/${USER}/.nvm"  && [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
