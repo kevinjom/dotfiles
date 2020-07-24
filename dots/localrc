@@ -95,4 +95,3 @@ which nvm > /dev/null && export NVM_DIR="/Users/${USER}/.nvm"  && [ -s "$NVM_DIR
 . /usr/local/share/zsh/site-functions/
 
 which jenv > /dev/null && export PATH="$HOME/.jenv/bin:$PATH" && eval "$(jenv init -)"
-source $HOME/.cargo/env
