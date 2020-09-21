@@ -5,6 +5,7 @@ alias vi='vim'
 
 alias ohdash='echo God damn it'
 
+alias b='bundle'
 alias be='bundle exec'
 alias bi='bundle install'
 alias mvni='mvn clean install -Dmaven.test.skip -DskipTests -DdownloadSources'
