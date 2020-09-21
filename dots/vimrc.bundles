@@ -57,6 +57,7 @@ Plug 'epilande/vim-react-snippets', { 'for': 'javascript.jsx' }
 Plug 'kien/rainbow_parentheses.vim'
 Plug 'tweekmonster/braceless.vim'
 Plug 'leafgarland/typescript-vim'
+Plug 'vim-test/vim-test'
 
 call plug#end()
 

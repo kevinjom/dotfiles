@@ -92,6 +92,13 @@ map <Leader>rr :RustRun<CR>
 :nnoremap <leader>ra :Dispatch rspec .<CR>
 :nnoremap <leader>rl :execute "Dispatch rspec %:" . line(".")<CR>
 
+" vim-test
+nmap <silent> <leader>tn :TestNearest<CR>
+nmap <silent> <leader>tf :TestFile<CR>
+nmap <silent> <leader>ts :TestSuite<CR>
+nmap <silent> <leader>tl :TestLast<CR>
+nmap <silent> <leader>tv :TestVisit<CR>
+
 " java
 :nnoremap <leader>jc :!javac %<CR>
 
