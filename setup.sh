@@ -30,9 +30,6 @@ for dir in $dirs; do
   done
 done
 
-log "install required npm packages"
-npm install -g pure-prompt
-
 log "install required ruby gems"
 which bundler || (echo "bundler is not installed, installing..." &&  sudo gem install bundler)
 cd $GEMS_DIR
@@ -42,3 +39,7 @@ log "installing brew formulas"
 
 cd $BREW_DIR
 brew bundle
+
+log "install required npm packages"
+npm install -g pure-prompt
+
