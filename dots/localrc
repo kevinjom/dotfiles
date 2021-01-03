@@ -7,10 +7,10 @@ autoload -U promptinit; promptinit
 prompt pure
 
 # zplug
-export ZPLUG_HOME=/usr/local/opt/zplug
+export ZPLUG_HOME=/opt/homebrew/opt/zplug
 source $ZPLUG_HOME/init.zsh
 zplug "zsh-users/zsh-syntax-highlighting", defer:2
-zplug "zsh-users/zsh-history-substring-search"
+zplug "zsh-users/zsh-autosuggestions"
 zplug load
 # zplug install
 
@@ -20,7 +20,8 @@ export LC_ALL=en_US.UTF-8
 export ANDROID_SDK_ROOT=/Users/${USER}/Library/Android/sdk
 export ANDROID_HOME="$ANDROID_SDK_ROOT"
 export PATH=$ANDROID_SDK_ROOT/emulator:$ANDROID_SDK_ROOT/tools:$ANDROID_SDK_ROOT/tools/bin:$ANDROID_SDK_ROOT/platform-tools:$PATH
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="$PATH:/opt/homebrew/bin"
 export EDITOR='vim'
 export GPG_TTY=$(tty)
 
@@ -64,9 +65,6 @@ export GRADLE_OPTS="$GRADLE_OPTS -Dorg.gradle.daemon=true"
 
 export BUNDLER_EDITOR=vim
 
-[[ -f /usr/local/opt/chruby/share/chruby/chruby.sh ]] && source /usr/local/opt/chruby/share/chruby/chruby.sh
-[[ -f /usr/local/opt/chruby/share/chruby/auto.sh ]] && source /usr/local/opt/chruby/share/chruby/auto.sh
-
 ## KMS encryp
 kms_encrypt(){
   aws kms encrypt --key-id $1 --plaintext $2 --output text --query CiphertextBlob
@@ -84,7 +82,7 @@ rm_br(){
 
 [[ -f ~/.darwinrc ]] && uname | grep -i darwin && source ~/.darwinrc
 
-source /usr/local/opt/asdf/asdf.sh
+source /opt/homebrew/opt/asdf/asdf.sh
 
 # nvm
 which nvm > /dev/null && export NVM_DIR="/Users/${USER}/.nvm"  && [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
