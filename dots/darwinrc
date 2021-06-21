@@ -6,4 +6,3 @@ start_docker(){
 export ANDROID_SDK_ROOT=/Users/${USER}/Library/Android/sdk
 export ANDROID_HOME="$ANDROID_SDK_ROOT"
 export PATH=$ANDROID_SDK_ROOT/emulator:$ANDROID_SDK_ROOT/tools:$ANDROID_SDK_ROOT/tools/bin:$ANDROID_SDK_ROOT/platform-tools:$PATH
-source /opt/homebrew/opt/asdf/asdf.sh

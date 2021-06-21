@@ -7,7 +7,7 @@ autoload -U promptinit; promptinit
 prompt pure
 
 # zplug
-export ZPLUG_HOME=/opt/homebrew/opt/zplug
+export ZPLUG_HOME=$(brew --prefix zplug)
 source $ZPLUG_HOME/init.zsh
 zplug "zsh-users/zsh-syntax-highlighting", defer:2
 zplug "zsh-users/zsh-autosuggestions"
@@ -82,7 +82,7 @@ rm_br(){
 
 [[ -f ~/.darwinrc ]] && uname | grep -i darwin && source ~/.darwinrc
 
-source /opt/homebrew/opt/asdf/asdf.sh
+source $(brew --prefix asdf)
 
 # nvm
 which nvm > /dev/null && export NVM_DIR="/Users/${USER}/.nvm"  && [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm

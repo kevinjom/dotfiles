@@ -35,6 +35,9 @@ which bundler || (echo "bundler is not installed, installing..." &&  sudo gem in
 cd $GEMS_DIR
 bundle
 
+log "install required npm packages"
+npm install -g pure-prompt
+
 log "installing brew formulas"
 
 cd $BREW_DIR
