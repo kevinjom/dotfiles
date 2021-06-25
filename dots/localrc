@@ -17,13 +17,15 @@ zplug load
 # exports
 
 export LC_ALL=en_US.UTF-8
-export ANDROID_SDK_ROOT=/Users/${USER}/Library/Android/sdk
-export ANDROID_HOME="$ANDROID_SDK_ROOT"
-export PATH=$ANDROID_SDK_ROOT/emulator:$ANDROID_SDK_ROOT/tools:$ANDROID_SDK_ROOT/tools/bin:$ANDROID_SDK_ROOT/platform-tools:$PATH
 export PATH="$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 export PATH="$PATH:/opt/homebrew/bin"
 export EDITOR='vim'
 export GPG_TTY=$(tty)
+
+# Adnroid
+#export ANDROID_SDK_ROOT=/Users/${USER}/Library/Android/sdk
+#export ANDROID_HOME="$ANDROID_SDK_ROOT"
+#export PATH=$ANDROID_SDK_ROOT/emulator:$ANDROID_SDK_ROOT/tools:$ANDROID_SDK_ROOT/tools/bin:$ANDROID_SDK_ROOT/platform-tools:$PATH
 
 # z
 . `brew --prefix`/etc/profile.d/z.sh
@@ -92,4 +94,17 @@ which nvm > /dev/null && export NVM_DIR="/Users/${USER}/.nvm"  && [ -s "$NVM_DIR
 # completions
 . /usr/local/share/zsh/site-functions/
 
-which jenv > /dev/null && export PATH="$HOME/.jenv/bin:$PATH" && eval "$(jenv init -)"
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
+# jenv enable-plugin export
+
+# refactor this
+source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
+source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
+
+# kubectl krew
+KREW_PATH="${HOME}/.krew/bin"
+if [ -d "$KREW_PATH" ];then
+  export PATH="${PATH}:${KREW_PATH}"
+fi
+

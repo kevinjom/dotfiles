@@ -1,6 +1,6 @@
 [branch]
 	autosetupmerge = true
-autosetuprebase = always
+  autosetuprebase = always
 [push]
 	default = current
 [alias]
@@ -40,5 +40,3 @@ autosetuprebase = always
 	name = kevinjom
 [gpg]
 	program = gpg
-[includeIf "gitdir:~/kode/persian_cat/"]
-    path = ~/kode/persian_cat/.gitconfig
