@@ -101,3 +101,10 @@ source ~/.localrc
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # zprof
+export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
+
+export GOARCH="arm64"
+
+# Added by Antigravity
+export PATH="/Users/wenqiang.fan/.antigravity/antigravity/bin:$PATH"

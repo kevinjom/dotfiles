@@ -50,3 +50,6 @@ bite."'
 dei(){
   docker exec -it $1 bash
 }
+
+
+alias gprof='go tool pprof -http : '

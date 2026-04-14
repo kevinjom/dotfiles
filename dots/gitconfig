@@ -33,6 +33,7 @@
 	required = true
 [core]
 	editor = vim
+	ignorecase = true
 [credential]
 	helper = osxkeychain
 	UseHttpPath = true
@@ -42,3 +43,7 @@
 	program = gpg
 [include]
   path = ~/.gitconfig.local
+[init]
+	templateDir = ~/.git-templates
+[url "https://gitlab-ci-token:@source.golabs.io"]
+	insteadOf = https://source.golabs.io
