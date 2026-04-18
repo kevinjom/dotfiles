@@ -35,13 +35,16 @@ which bundler || (echo "bundler is not installed, installing..." &&  sudo gem in
 cd $GEMS_DIR
 bundle
 
+
+which npm || (echo "npm not installed, installing node..." &&  brew install node)
+
 log "install required npm packages"
 npm install -g pure-prompt
 
 log "installing brew formulas"
 
 cd $BREW_DIR
-brew bundle
+brew bundle install
 
 log "install required npm packages"
 npm install -g pure-prompt
